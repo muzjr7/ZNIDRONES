@@ -136,63 +136,72 @@
          </div>
       </div>
    </section>
-   <section id="service-locations" class="service-locations py-5" style="background: linear-gradient(to right, #1a2a3a, #1f3b4d, #2a4961);">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title display-5 fw-bold text-white">Our Service Locations</h2>
-      <p class="text-light">Proudly serving all 7 Emirates of the United Arab Emirates</p>
-    </div>
-
-    <!-- Swiper -->
-    <div class="swiper serviceLocationSwiper">
-      <div class="swiper-wrapper">
-        <!-- Emirate Cards -->
-        <div class="swiper-slide">
-          <div class="location-card">
-            <img src="images/emirate-dubai.jpg" alt="Dubai" />
-            <h5>Dubai</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="location-card">
-            <img src="images/emirate-abu-dhabi.jpg" alt="Abu Dhabi" />
-            <h5>Abu Dhabi</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="location-card">
-            <img src="images/emirate-sharjah.jpg" alt="Sharjah" />
-            <h5>Sharjah</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="location-card">
-            <img src="images/emirate-ajman.jpg" alt="Ajman" />
-            <h5>Ajman</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="location-card">
-            <img src="images/emirate-uaq.jpg" alt="Umm Al Quwain" />
-            <h5>Umm Al Quwain</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="location-card">
-            <img src="images/emirate-ras-al-khaimah.jpg" alt="Ras Al Khaimah" />
-            <h5>Ras Al Khaimah</h5>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="location-card">
-            <img src="images/emirate-fujairah.jpg" alt="Fujairah" />
-            <h5>Fujairah</h5>
-          </div>
-        </div>
+   <section id="service-locations" class="service-locations py-5"
+      style="background: linear-gradient(to right, #1a2a3a, #1f3b4d, #2a4961);">
+      <div class="text-center mb-2">
+         <h2 class="section-title display-5 fw-bold text-white">Our Service Locations</h2>
+         <p class="text-light">Proudly serving all 7 Emirates of the United Arab Emirates</p>
       </div>
-    </div>
-  </div>
-</section>
+
+      <!-- Swiper -->
+      <div class="swiper serviceLocationSwiper">
+         <div class="swiper-wrapper">
+
+            <!-- First (Featured) Slide -->
+            <div class="swiper-slide featured-slide">
+               <div class="location-card">
+                  <img src="images/2.png" alt="Sharjah" />
+                  <h5>Sharjah</h5>
+               </div>
+            </div>
+
+
+            <!-- Other Emirates -->
+            <div class="swiper-slide">
+               <div class="location-card">
+                  <img src="images/3.png" alt="Dubai" />
+                  <h5>Dubai</h5>
+               </div>
+            </div>
+
+            <div class="swiper-slide">
+               <div class="location-card">
+                  <img src="images/4.png" alt="Abu Dhabi" />
+                  <h5>Abu Dhabi</h5>
+               </div>
+            </div>
+
+            <div class="swiper-slide">
+               <div class="location-card">
+                  <img src="images/5.png" alt="Ras Al Khaimah" />
+                  <h5>Ras Al Khaimah</h5>
+               </div>
+            </div>
+
+            <div class="swiper-slide">
+               <div class="location-card">
+                  <img src="images/6.png" alt="Fujairah" />
+                  <h5>Fujairah</h5>
+               </div>
+            </div>
+
+            <div class="swiper-slide">
+               <div class="location-card">
+                  <img src="images/7.png" alt="Ajman" />
+                  <h5>Ajman</h5>
+               </div>
+            </div>
+
+            <div class="swiper-slide">
+               <div class="location-card">
+                  <img src="images/emirate-fujairah.jpg" alt="Umm Al Quwain" />
+                  <h5>Umm Al Quwain</h5>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
 
 
    <!-- end we_do -->
@@ -323,19 +332,20 @@
    });
 
    var serviceSwiper = new Swiper(".serviceLocationSwiper", {
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  slidesPerView: 1,
-  spaceBetween: 20,
-  breakpoints: {
-    576: { slidesPerView: 2 },
-    768: { slidesPerView: 3 },
-    1200: { slidesPerView: 4 }
-  }
-});
+      loop: true,
+      autoplay: {
+         delay: 3000,
+         disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 20,
+      breakpoints: {
+         576: { slidesPerView: 2 },
+         768: { slidesPerView: 3 },
+         1200: { slidesPerView: 4 }
+      }
+   });
+
 
 </script>
 
