@@ -500,8 +500,8 @@ ul.email li i {
 }
 
 .we_box h3 {
-     color: #292929;
-     font-size: 22px;
+     color: #363636;
+     font-size: 30px;
      font-weight: bold;
      line-height: 25px;
      text-transform: uppercase;
@@ -513,12 +513,12 @@ ul.email li i {
 }
 
 .we_box p {
-     color: #292929;
+     color: #363636;
      padding-top: 25px;
      display: block;
      padding-bottom: 20px;
      font-size: 29px;
-     font-weight: 600;
+     font-weight: 500;
 }
 
 
