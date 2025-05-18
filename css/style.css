@@ -21,23 +21,37 @@ import Fonts
 basic 
 ---------------------------------------------------------------------*/
 .zni-header {
-     font-size: 1.2rem;              /* Adjust for small column */
-     font-weight: 700;
-     text-align: center;
-     color: #ffffff;
-     text-transform: uppercase;
-     letter-spacing: 1px;
-     font-family: 'Orbitron', sans-serif;
-     margin: 0;
-     line-height: 1.2;
-     white-space: normal;           /* Wraps text in smaller columns */
-     word-break: break-word;
-   }
-   
-   .logo {
-     padding: 10px;
-     text-align: center;
-   }
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  line-height: 1.2;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+  .zni-header {
+    font-size: 1rem;
+    text-align: left;
+  }
+  .logo-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
 
 body {
      color: #666666;
@@ -314,14 +328,15 @@ header
 ---------------------------------------------------------------------*/
 
 .header {
-     width: 100%;
-     background: #377eb4de;
-     height: 106px;
-     padding: 5px 30px;
-     position: absolute;
-     z-index: 999;
-     box-shadow: 3px 0 13px rgba(30, 30, 30, 0.90);
+  width: 100%;
+  background: #377eb4de;
+  height: auto;
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 999;
+  box-shadow: 3px 0 13px rgba(30, 30, 30, 0.90);
 }
+
 
 
 /*--------------------------------------------------------------------- 
