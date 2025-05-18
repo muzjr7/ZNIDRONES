@@ -558,9 +558,10 @@ ul.email li i {
 
 /** about **/
 
+/** about **/
 .about {
-  padding: 0px 0;
-  background-color: #f9f9f9; /* Optional: gives a light background */
+  padding: 40px 15px; /* Add horizontal padding for mobile */
+  background-color: #f9f9f9;
   text-align: center;
 }
 
@@ -574,11 +575,10 @@ ul.email li i {
 .video-wrapper {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0px;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   background: white;
 }
+
 .responsive-video {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 ratio */
@@ -595,19 +595,14 @@ ul.email li i {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Keeps it nicely cropped if needed */
+  object-fit: cover;
   border-radius: 12px;
 }
 
-
-.about-video {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
 .about-description {
   max-width: 100%;
   margin: 40px auto 0;
+  padding: 0 15px; /* mobile padding */
   text-align: left;
   color: #333;
   font-size: 16px;
@@ -621,6 +616,7 @@ ul.email li i {
   text-align: center;
   color: #222;
 }
+
 
 .about .titlepage::before {
      border: #fff solid 5px;
