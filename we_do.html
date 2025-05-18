@@ -22,10 +22,10 @@
    <!-- awesome fontfamily -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -136,6 +136,64 @@
          </div>
       </div>
    </section>
+   <section id="service-locations" class="service-locations py-5" style="background: linear-gradient(to right, #1a2a3a, #1f3b4d, #2a4961);">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title display-5 fw-bold text-white">Our Service Locations</h2>
+      <p class="text-light">Proudly serving all 7 Emirates of the United Arab Emirates</p>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper serviceLocationSwiper">
+      <div class="swiper-wrapper">
+        <!-- Emirate Cards -->
+        <div class="swiper-slide">
+          <div class="location-card">
+            <img src="images/emirate-dubai.jpg" alt="Dubai" />
+            <h5>Dubai</h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="location-card">
+            <img src="images/emirate-abu-dhabi.jpg" alt="Abu Dhabi" />
+            <h5>Abu Dhabi</h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="location-card">
+            <img src="images/emirate-sharjah.jpg" alt="Sharjah" />
+            <h5>Sharjah</h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="location-card">
+            <img src="images/emirate-ajman.jpg" alt="Ajman" />
+            <h5>Ajman</h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="location-card">
+            <img src="images/emirate-uaq.jpg" alt="Umm Al Quwain" />
+            <h5>Umm Al Quwain</h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="location-card">
+            <img src="images/emirate-ras-al-khaimah.jpg" alt="Ras Al Khaimah" />
+            <h5>Ras Al Khaimah</h5>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="location-card">
+            <img src="images/emirate-fujairah.jpg" alt="Fujairah" />
+            <h5>Fujairah</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
    <!-- end we_do -->
    <!-- footer -->
@@ -198,14 +256,15 @@
                         <li><a href="tel:+971501234567"><i class="fa fa-phone" aria-hidden="true"></i> +971 50 123
                               4567</a></li>
                         <li><a href="mailto:info@znidrones.com"><i class="fa fa-envelope" aria-hidden="true"></i>
-                               sales@znigroupglobal.com</a></li>
+                              sales@znigroupglobal.com</a></li>
                      </ul>
                   </div>
                </div>
+
             </div>
          </div>
 
-         <div class="copyright text_align_left">
+         <div class="copyright text_align_left" style="color: #999;">
             <div class="container">
                <div class="row d_flex">
                   <div class="col-md-6">
@@ -219,6 +278,10 @@
                         <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                      </ul>
+                  </div>
+                  <div class="col-12">
+                     <p>Note: All images and videos shown are for illustrative purposes only and are not intended to
+                        infringe on any copyrights.</p>
                   </div>
                </div>
             </div>
@@ -234,30 +297,46 @@
    <script src="js/custom.js"></script>
 </body>
 <script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      576: {
-        slidesPerView: 1.2,
+   var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
       },
-      768: {
-        slidesPerView: 2,
+      navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
       },
-      992: {
-        slidesPerView: 3,
-      },
-    }
-  });
+      breakpoints: {
+         576: {
+            slidesPerView: 1.2,
+         },
+         768: {
+            slidesPerView: 2,
+         },
+         992: {
+            slidesPerView: 3,
+         },
+      }
+   });
+
+   var serviceSwiper = new Swiper(".serviceLocationSwiper", {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    576: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    1200: { slidesPerView: 4 }
+  }
+});
+
 </script>
 
 </html>
