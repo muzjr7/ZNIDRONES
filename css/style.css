@@ -658,107 +658,65 @@ ul.email li i {
 
 
 /** portfolio **/
-
 .portfolio {
-     padding-top: 90px;
-     padding-bottom: 90px;
-     background: #3f7dad;
+  padding: 60px 20px;
+  background: #e2e2e2;
+  color: #4f4f4f;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
 }
 
-.portfolio .titlepage::before {
-     right: inherit;
-     border: #ffffff solid 5px;
-     left: 15px;
+.titlepage h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #4f4f4f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
-.portfolio_main {
-     margin-bottom: 30px;
-     transition: ease-in all 0.5s;
+/* Grid container */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.portfolio_main figure {
-     margin: 0;
-     position: relative;
-     overflow: hidden;
+/* Each gallery item */
+.gallery-item {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-#ho_nf:hover {
-     box-shadow: 3px 0 20px rgba(30, 30, 30, 0.31);
-     transition: ease-in all 0.5s;
+.gallery-item:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-6px);
 }
 
-#ho_nf:hover .portfolio_text {
-     height: 240px;
-     transition: ease-in all 0.5s;
-     padding: 40px 40px;
+/* Images inside gallery */
+.gallery-item img {
+  width: 100%;
+  height: 260px; /* increased height */
+  object-fit: cover;
+  display: block;
+  border-radius: 16px 16px 0 0;
+  transition: none; /* removes zoom effect */
 }
 
-#ho_nf:hover .li_icon {
-     margin-top: -65px;
-     transition: ease-in all 0.7s;
+/* Responsive height for smaller devices */
+@media (max-width: 576px) {
+  .gallery-item img {
+    height: 200px;
+  }
 }
 
-.portfolio_text {
-     cursor: pointer;
-     position: absolute;
-     transition: ease-in all 0.5s;
-     bottom: 0;
-     height: 0;
-     background: #fff;
-     overflow: initial;
-     width: 100%;
-}
-
-.li_icon {
-     display: flex;
-     transition: ease-in all 0.7s;
-     z-index: 99999999999999999999999;
-     position: absolute;
-}
-
-.li_icon a {
-     background: #fff;
-     width: 60px;
-     height: 60px;
-     border-radius: 50px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     color: #3a404e;
-     box-shadow: 3px 0 9px rgba(30, 30, 30, 0.09);
-}
-
-.li_icon a:hover {
-     background: #0f1012;
-     color: #fff;
-}
-
-.portfolio_text h3 {
-     color: #0e8fa6;
-     font-size: 24px;
-     line-height: 30px;
-     font-weight: bold;
-     padding-bottom: 15px;
-}
-
-.portfolio_text p {
-     color: #031330;
-     font-size: 20px;
-     line-height: 20px;
-     padding-bottom: 15px;
-     font-weight: bold;
-}
-
-.portfolio .read_more {
-     margin: 0 auto;
-     display: block;
-     background: #252525;
-     margin-top: 30px;
-}
-
-.portfolio .read_more:hover {
-     background: #464646c7;
-}
 
 
 /* end portfolio */
@@ -819,30 +777,42 @@ ul.email li i {
 
 /** end chose **/
 .our-work .section-title {
-     font-size: 2.5rem;
-     font-weight: 700;
-     text-transform: uppercase;
-     color: #0f172a;
-   }
-   
-   .swiper-slide img {
-     width: 100%;
-     height: 500px;                /* increase image height */
-     object-fit: contain;            /* keeps image neat */
-     border-radius: 16px;
-     transition: transform 0.3s ease;
-     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-   }
-   
-   .swiper-slide img:hover {
-     transform: scale(1.05);
-   }
-   .full-width-container {
-     width: 100%;
-     padding-left: 2rem;
-     padding-right: 2rem;
-   }
-   
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0f172a;
+}
+
+.full-width-container {
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.our-work .swiper-slide img {
+  width: 100%;
+  height: 400px;              /* nice default height */
+  object-fit: cover;          /* cover keeps the image nicely filled */
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.our-work .swiper-slide img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .our-work .swiper-slide img {
+    height: 300px;            /* smaller height for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .our-work .swiper-slide img {
+    height: 200px;            /* smaller height for phones */
+  }
+}
 
 /** contact section **/
 
