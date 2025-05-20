@@ -94,14 +94,17 @@
             <div class="gallery-item"><img src="images/d10.jpg" alt="Portfolio 10" /></div>
             <div class="gallery-item"><img src="images/d11.jpg" alt="Portfolio 11" /></div>
             <div class="gallery-item"><img src="images/d12.jpg" alt="Portfolio 12" /></div>
-            <div class="gallery-item"><img src="images/h1.png" alt="Portfolio 12" /></div>
-            <div class="gallery-item"><img src="images/h2.png" alt="Portfolio 12" /></div>
-            <div class="gallery-item"><img src="images/h3.png" alt="Portfolio 12" /></div>
-            <div class="gallery-item"><img src="images/h4.png" alt="Portfolio 12" /></div>
-            <div class="gallery-item"><img src="images/h5.png" alt="Portfolio 12" /></div>
-            <div class="gallery-item"><img src="images/h6.png" alt="Portfolio 12" /></div>
+            <div class="gallery-item"><img src="images/h1.png" alt="Portfolio 13" /></div>
+            <div class="gallery-item"><img src="images/h2.png" alt="Portfolio 14" /></div>
+            <div class="gallery-item"><img src="images/h3.png" alt="Portfolio 15" /></div>
+            <div class="gallery-item"><img src="images/h4.png" alt="Portfolio 16" /></div>
+            <div class="gallery-item"><img src="images/h5.png" alt="Portfolio 17" /></div>
+            <div class="gallery-item"><img src="images/h6.png" alt="Portfolio 18" /></div>
          </div>
-
+         <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-img" src="" alt="Expanded view" />
+          </div>
       </div>
    </div>
 
@@ -211,3 +214,28 @@
 </body>
 
 </html>
+<script>
+   const galleryImages = document.querySelectorAll('.gallery-item img');
+   const lightbox = document.getElementById('lightbox');
+   const lightboxImg = document.querySelector('.lightbox-img');
+   const closeBtn = document.querySelector('.lightbox-close');
+ 
+   galleryImages.forEach(img => {
+     img.addEventListener('click', () => {
+       lightboxImg.src = img.src;
+       lightbox.classList.add('show');
+     });
+   });
+ 
+   closeBtn.addEventListener('click', () => {
+     lightbox.classList.remove('show');
+   });
+ 
+   // Optional: click outside image to close
+   lightbox.addEventListener('click', (e) => {
+     if (e.target === lightbox) {
+       lightbox.classList.remove('show');
+     }
+   });
+ </script>
+ 
